@@ -8,7 +8,7 @@ def readData(path):
 
 
 def __main__():
-    path = "german_credit_data.csv"
+    path = "german_credit_data.csv  "
     df = readData(path)
 
     # Check Datafield
@@ -19,7 +19,7 @@ def __main__():
     df.replace("?", np.nan, inplace=True)
     print(df.isnull().sum())
     print(df.isnull().any())
-    print(df.dropna)
+    print(df.dropna())
 
 
 __main__()
